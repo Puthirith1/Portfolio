@@ -21,7 +21,7 @@ export default function ProjectSection() {
           <h4 className="text-lg font-bold">Dashboard</h4>
           <Card className="mt-2 p-0">
             <CardContent className=" aspect-video flex items-center justify-center p-4">
-              <img alt='Dashboard' src="/dashboard.png" />
+              <img alt='Dashboard' src="dashboard.png" />
             </CardContent>
           </Card>
         </div>
@@ -35,14 +35,14 @@ export default function ProjectSection() {
                 <CarouselItem>
                     <Card className="p-0">
                       <CardContent className=" aspect-video flex items-center justify-center p-4">
-                        <img alt='POS in retail mode; primary use barcode scanner to add items.' src="/pos-retail.png" />
+                        <img alt='POS in retail mode; primary use barcode scanner to add items.' src="pos-retail.png" />
                       </CardContent>
                     </Card>
                 </CarouselItem>
                 <CarouselItem>
                   <Card className="p-0">
                     <CardContent className="aspect-video flex items-center justify-center p-4">
-                      <img alt='POS in menu mode; have menu like to help select items.' src="/pos-menu.png" />
+                      <img alt='POS in menu mode; have menu like to help select items.' src="pos-menu.png" />
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -57,28 +57,28 @@ export default function ProjectSection() {
                 <CarouselItem>
                     <Card className="p-0">
                       <CardContent className=" aspect-video flex items-center justify-center p-4">
-                        <img alt='Inventory general information control.' src="/inventory-general.png" />
+                        <img alt='Inventory general information control.' src="inventory-general.png" />
                       </CardContent>
                     </Card>
                 </CarouselItem>
                 <CarouselItem>
                   <Card className="p-0">
                     <CardContent className="aspect-video flex items-center justify-center p-4">
-                      <img alt='Inventory unit of measure control.' src="/inventory-uom.png" />
+                      <img alt='Inventory unit of measure control.' src="inventory-uom.png" />
                     </CardContent>
                   </Card>
                 </CarouselItem>
                 <CarouselItem>
                   <Card className="p-0">
                     <CardContent className="aspect-video flex items-center justify-center p-4">
-                      <img alt='Inventory and discount group relation control.' src="/inventory-discount.png" />
+                      <img alt='Inventory and discount group relation control.' src="inventory-discount.png" />
                     </CardContent>
                   </Card>
                 </CarouselItem>
                 <CarouselItem>
                   <Card className="p-0">
                     <CardContent className="aspect-video flex items-center justify-center p-4">
-                      <img alt='Replenishment alert and expiry alert control.' src="/inventory-replenishment.png" />
+                      <img alt='Replenishment alert and expiry alert control.' src="inventory-replenishment.png" />
                     </CardContent>
                   </Card>
                 </CarouselItem>

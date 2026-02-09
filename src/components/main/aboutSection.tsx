@@ -10,7 +10,7 @@ export default function AboutSection() {
 			<div className="wrapper mt-10 md:mt-20">
 				<div className="flex flex-col md:flex-row justify-center items-center">
 					<Avatar className="size-80">
-						<AvatarImage src="/profile.jpg" />
+						<AvatarImage src="profile.jpg" />
 						<AvatarFallback className="text-7xl">CP</AvatarFallback>
 					</Avatar>
 					<div className="md:ml-15 flex flex-col justify-center">

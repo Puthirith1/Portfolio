@@ -33,16 +33,3 @@ export default function ExperienceSection() {
     </section>
   )
 }
-
-// Quik Technology 2024 - PRESENT
-// Software Engineer – Lead Project Contributor
-// Designed, built, and currently operate a production POS
-// and inventory management platform actively used by real
-// businesses. Worked end-to-end across frontend, backend,
-// and data layers, shipping incremental improvements and
-// maintaining system reliability.
-// Key Platform Capabilities:
-// Sales, purchasing, and inventory tracking
-// Real-time low-stock and near-expiry alerts
-// Role-based permissions and approval workflows
-// Secure authentication and authorization
