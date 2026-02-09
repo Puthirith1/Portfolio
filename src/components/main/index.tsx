@@ -6,7 +6,7 @@ import ContactSection from "./contactSection"
 
 export default function Main() {
   return (
-    <main>
+    <main className="preahvihear">
       <AboutSection />
       <EducationSection />
       <ExperienceSection />

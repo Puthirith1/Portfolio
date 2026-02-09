@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-
-@custom-variant dark (&:is(.dark *));
 
 * {
   box-sizing: border-box;
@@ -12,12 +10,7 @@
 
 #root {
   @apply w-dvw min-h-dvh bg-background;
-}
-
-.preahvihear-regular {
-  font-family: "Preahvihear", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Ubuntu Sans", sans-serif;
 }
 
 
@@ -120,7 +113,7 @@
 
   --popover-foreground: oklch(1 0 0);
 
-  --primary: oklch(0.4665 0.2115 301.04);
+  --primary: var(--color-indigo-600);
 
   --primary-foreground: oklch(0.985 0 0);
 
@@ -158,7 +151,7 @@
 
   --sidebar-foreground: oklch(0.985 0 0);
 
-  --sidebar-primary: oklch(0.4665 0.2115 301.04);
+  --sidebar-primary: var(--color-indigo-600);
 
   --sidebar-primary-foreground: oklch(0.985 0 0);
 
