@@ -8,9 +8,34 @@ import {
 import { cn } from "@/lib/utils"
 
 export default function Header() {
+
+	const smoothScroll = (event: React.MouseEvent<HTMLAnchorElement>) => {
+		event.preventDefault();
+
+    const target = event.currentTarget.getAttribute("href")
+		const targetId = target?.replace("#", "")
+    if (!targetId) return;
+
+    const el = document.getElementById(targetId)
+    if (!el) return
+
+		if (targetId === 'about') {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth',
+			});
+		} else {
+			window.scrollTo({
+				top: el.offsetTop - 64,
+				behavior: 'smooth',
+			});
+		}
+		globalThis.history.pushState(null, '', target);
+	};
+
   return (
-    <header className="border-b bg-[#1A0B2E]">
-      <div className="wrapper h-16 flex items-center justify-center">
+    <header className="h-16 border-b bg-[#1A0B2E] sticky top-0 z-10">
+      <div className="wrapper h-full flex items-center justify-center">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -20,6 +45,7 @@ export default function Header() {
                   navigationMenuTriggerStyle(), 
                   'bg-transparent! text-white! hover:bg-white/10!'
                 )}
+                onClick={smoothScroll}
               >
                 About
               </NavigationMenuLink>
@@ -31,6 +57,7 @@ export default function Header() {
                   navigationMenuTriggerStyle(), 
                   'bg-transparent! text-white! hover:bg-white/10!'
                 )}
+                onClick={smoothScroll}
               >
                 Education
               </NavigationMenuLink>
@@ -42,17 +69,19 @@ export default function Header() {
                   navigationMenuTriggerStyle(), 
                   'bg-transparent! text-white! hover:bg-white/10!'
                 )}
+                onClick={smoothScroll}
               >
                 Experience
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink 
-                href="#projects" 
+                href="#project" 
                 className={cn(
                   navigationMenuTriggerStyle(), 
                   'bg-transparent! text-white! hover:bg-white/10!'
                 )}
+                onClick={smoothScroll}
               >
                 Project
               </NavigationMenuLink>
@@ -64,6 +93,7 @@ export default function Header() {
                   navigationMenuTriggerStyle(), 
                   'bg-transparent! text-white! hover:bg-white/10!'
                 )}
+                onClick={smoothScroll}
               >
                 Contact
               </NavigationMenuLink>

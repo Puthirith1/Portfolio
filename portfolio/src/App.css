@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
-#root {
-  @apply w-dvw h-dvh bg-[#11071F];
+* {
+  box-sizing: border-box;
 }
+
+#root {
+  @apply w-dvw min-h-dvh bg-background;
+}
+
+.preahvihear-regular {
+  font-family: "Preahvihear", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .wrapper {
   @apply w-full mx-auto max-w-xl px-4 md:max-w-3xl md:px-6 xl:max-w-7xl xl:px-8;
@@ -95,33 +108,33 @@
 
   --radius: 0.625rem;
 
-  --background: oklch(1 0 0);
+  --background: oklch(0.16 0.05 300.4);
 
-  --foreground: oklch(0.145 0 0);
+  --foreground: oklch(1 0 0);
 
-  --card: oklch(1 0 0);
+  --card: oklch(0.16 0.05 300.4);
 
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: oklch(1 0 0);
 
-  --popover: oklch(1 0 0);
+  --popover: oklch(0.16 0.05 300.4);
 
-  --popover-foreground: oklch(0.145 0 0);
+  --popover-foreground: oklch(1 0 0);
 
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.4665 0.2115 301.04);
 
   --primary-foreground: oklch(0.985 0 0);
 
-  --secondary: oklch(0.97 0 0);
+  --secondary: oklch(0.205 0 0);
 
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary-foreground: oklch(0.97 0 0);
 
-  --muted: oklch(0.97 0 0);
+  --muted: oklch(0.205 0 0);
 
   --muted-foreground: oklch(0.556 0 0);
 
-  --accent: oklch(0.97 0 0);
+  --accent: oklch(0.205 0 0);
 
-  --accent-foreground: oklch(0.205 0 0);
+  --accent-foreground: oklch(0.97 0 0);
 
   --destructive: oklch(0.577 0.245 27.325);
 
@@ -141,17 +154,17 @@
 
   --chart-5: oklch(0.769 0.188 70.08);
 
-  --sidebar: oklch(0.985 0 0);
+  --sidebar: oklch(0.145 0 0);
 
-  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
 
-  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary: oklch(0.4665 0.2115 301.04);
 
   --sidebar-primary-foreground: oklch(0.985 0 0);
 
-  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent: oklch(0.205 0 0);
 
-  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-accent-foreground: oklch(0.97 0 0);
 
   --sidebar-border: oklch(0.922 0 0);
 
