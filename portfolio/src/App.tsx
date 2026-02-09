@@ -1,11 +1,14 @@
-import { useState } from 'react'
 import './App.css'
 import Header from './components/header'
+import Main from './components/main'
+import Footer from './components/footer'
 
-const App = () => {
+export default function App() {
   return (
-    <Header />
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
   )
 }
-
-export default App

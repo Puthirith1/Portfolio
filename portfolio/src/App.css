@@ -8,6 +8,10 @@
   @apply w-dvw h-dvh bg-[#11071F];
 }
 
+.wrapper {
+  @apply w-full mx-auto max-w-xl px-4 md:max-w-3xl md:px-6 xl:max-w-7xl xl:px-8;
+}
+
 @theme inline {
 
   --radius-sm: calc(var(--radius) - 4px);
